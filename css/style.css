@@ -112,7 +112,7 @@ p {
     color: rgb(230, 230, 230);
 }
 
-.twoDivs>.description {
+.twoDivs>.imgdescription {
     position: absolute;
     height: 338px;
     width: 268px;
@@ -122,7 +122,7 @@ p {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    top: 20%;
+    top: 36px;
     left: 720px;
     border-radius: 6px;
     transition: transform 1s ease;
@@ -131,7 +131,7 @@ p {
     pointer-events: none;
 }
 
-.description.show {
+.imgdescription.show {
     transform: translateY(0%);
     opacity: 1;
 }
@@ -143,8 +143,8 @@ p {
     display: flex;
     align-items: center;
     background-repeat: no-repeat;
-    top: 20%;
-    left: 10%;
+    top: 36px;
+    left: 10px;
     border-radius: 6px;
     transition: transform 1s ease;
     transform: translateY(-50%);
