@@ -112,18 +112,18 @@ p {
     color: rgb(230, 230, 230);
 }
 
-.twoDivs>.imgdescription {
+.description {
     position: absolute;
-    height: 338px;
-    width: 268px;
+    height: 292px;
+    width: 263px;
     display: flex;
     align-items: center;
     background-image: url(/images/profile.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    top: 20%;
-    left: 720px;
+    top: 134px;
+    left: 740px;
     border-radius: 6px;
     transition: transform 1s ease;
     transform: translateY(-50%);
@@ -131,7 +131,7 @@ p {
     pointer-events: none;
 }
 
-.imgdescription.show {
+.description.show {
     transform: translateY(0%);
     opacity: 1;
 }
@@ -143,8 +143,8 @@ p {
     display: flex;
     align-items: center;
     background-repeat: no-repeat;
-    top: 36px;
-    left: 10px;
+    top: 60px;
+    left: 10%;
     border-radius: 6px;
     transition: transform 1s ease;
     transform: translateY(-50%);
