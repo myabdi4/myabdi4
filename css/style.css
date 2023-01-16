@@ -19,13 +19,15 @@ body {
 }
 
 .logo {
+    font-size: 1.3vw;
     display: grid;
     place-items: center;
     font-size: 24px;
     background-color: #28b487;
     text-align: center;
-    width: 11%;
-    height: 9%;
+    width: fit-content;
+    padding: 8.5px;
+    height: 5.5%;
     border-radius: 4px;
     position: absolute;
     cursor: pointer;
@@ -34,6 +36,7 @@ body {
     right: 0;
     bottom: 0;
     margin: auto;
+    overflow: hidden;
 }
 
 
