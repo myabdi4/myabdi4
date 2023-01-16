@@ -58,20 +58,46 @@ body {
     opacity: 0.6;
 }
 
-.welcome {
+.twoDivs {
+    display: flex;
     position: absolute;
     height: 70%;
     width: 35%;
-    display: flex;
+    padding: 10px;
+    gap: 10px;
+}
+
+.twoDivs>.welcome {
+    position: absolute;
     align-items: center;
     background: rgb(128, 0, 105);
-    top: 20%;
-    left: 5%;
+    top: 30%;
+    left: 9%;
+    width: 80%;
+    height: 257px;
+    padding: 50px;
     border-radius: 6px;
     transition: transform 1s ease;
 }
 
 .welcome.hidden {
+    transform: translateY(-100%);
+    opacity: 0;
+}
+
+.twoDivs>.warning {
+    position: absolute;
+    background: rgb(2, 0, 128);
+    top: 30%;
+    left: 157%;
+    width: 80%;
+    height: 257px;
+    padding: 50px;
+    border-radius: 6px;
+    transition: transform 1s ease;
+}
+
+.warning.hidden {
     transform: translateY(-100%);
     opacity: 0;
 }
@@ -84,25 +110,6 @@ p {
     padding: 10px;
     text-align: center;
     color: rgb(230, 230, 230);
-}
-
-.warning {
-    position: absolute;
-    height: 70%;
-    width: 35%;
-    display: flex;
-    align-items: center;
-    background: rgb(2, 0, 128);
-    top: 20%;
-    left: 60%;
-    border-radius: 6px;
-    transition: transform 1s ease;
-    position: absolute;
-}
-
-.warning.hidden {
-    transform: translateY(-100%);
-    opacity: 0;
 }
 
 .description {
@@ -155,5 +162,68 @@ p {
     font-family: Arial, sans-serif;
     font-size: 22px;
     color: #ffffff;
-    /* line-height: 1.5; */
+    line-height: 1.5;
+}
+
+
+/* Responsvie */
+
+@media (max-width: 768px) {
+    .mainContainer {
+        position: absolute;
+        height: 563px;
+        width: 309px;
+        left: -1px;
+        top: 9px;
+        padding: 11px;
+    }
+    .logo {
+        font-size: 1.3vw;
+        display: grid;
+        place-items: center;
+        font-size: 24px;
+        background-color: #28b487;
+        text-align: center;
+        width: fit-content;
+        padding: 8.5px;
+        height: 5.5%;
+        border-radius: 4px;
+        position: absolute;
+        cursor: pointer;
+        top: -455px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+    }
+    p {
+        position: absolute;
+        text-align: center;
+        font-size: 24px;
+        line-height: 1.5;
+        top: 34px;
+        left: -9px;
+    }
+    .twoDivs {
+        position: absolute;
+        height: 8px;
+        width: 15px;
+        padding: 10px;
+        gap: 10px;
+        font-size: 10px;
+    }
+    .twoDivs>.welcome {
+        position: absolute;
+        left: 10px;
+        top: 145px;
+        height: 79px;
+        width: 196px;
+    }
+    .twoDivs>.warning {
+        position: absolute;
+        left: 10px;
+        top: 362px;
+        height: 80px;
+        width: 197px;
+    }
 }
