@@ -1,0 +1,38 @@
+
+h1 {
+    position: absolute;
+    text-align: center;
+    font-size: 45px;
+    color: white;
+    top: 10%;
+    left: 20%;
+}
+
+h3 {
+    position: absolute;
+    color: rgb(8, 227, 194);
+    top: 68%;
+    left: 62%;
+    font-style: italic;
+}
+img{
+    position: absolute;
+    width: 2%;
+    height: 4%;
+    left: 28%;
+    top: 69%;
+    border-radius: 40%;
+    cursor: grab;
+}
+
+button {
+    background-color: rgb(30, 30, 3);
+    position: absolute;
+    color: rgb(191, 214, 227);
+    font-family: 'Courier New', Courier, monospace;
+    font-size:24px;
+    height: 50%;
+    width: 50%;
+    left: 27%;
+    cursor: pointer;
+}
