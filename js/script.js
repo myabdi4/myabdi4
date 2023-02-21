@@ -14,3 +14,16 @@ logo.addEventListener("click", () => {
         aboutme.classList.toggle("show");
     }
 });
+
+// Add a click event listener to the button
+const helloButton = document.getElementById('hello-button');
+
+helloButton.addEventListener('click', () => {
+    // Create a new SpeechSynthesisUtterance object with the text of the button
+    const utterance = new SpeechSynthesisUtterance(helloButton.textContent);
+    const voices = speechSynthesis.getVoices();
+    // Set the voice of the utterance to the first available voice
+    utterance.voice = voices[4];
+    // Use the SpeechSynthesis API to generate speech from the text
+    window.speechSynthesis.speak(utterance);
+});

@@ -11,6 +11,7 @@
 
 <body>
     <!-- Circular Div -->
+    <!-- Section 1 -->
     <div class="mainContainer">
         <div class="logo">myabdi4</div>
 
@@ -20,12 +21,11 @@
             <div class="texttospeech">
                 <p><a href="#texttospeechsection">Text to Speech</a></p>
             </div>
+
             <!-- projecttwo -->
             <div class="projectTwo">
                 <p> Project Two</p>
             </div>
-
-
             <!-- flip effect - bio  -->
             <div class="description"></div>
         </div>
@@ -39,9 +39,7 @@
         </div>
     </div>
 
-
-
-    <!-- TTS PAGE -->
+    <!-- Section 2 TTS PAGE -->
     <div id="texttospeechsection">
         <h1> FUN PROJECT- TEXT TO SPEECH (TTS) </h1>
     
@@ -57,22 +55,6 @@
                 <img src="images/return.png" alt="return home">
             </a>
     </div>
-
-
-    <!-- Script for the TEXT TO SPEECH -->
-    <script>
-        // Add a click event listener to the button
-      const helloButton = document.getElementById('hello-button');
-      helloButton.addEventListener('click', () => {
-        // Create a new SpeechSynthesisUtterance object with the text of the button
-        const utterance = new SpeechSynthesisUtterance(helloButton.textContent);
-        const voices = speechSynthesis.getVoices();
-        // Set the voice of the utterance to the first available voice
-        utterance.voice = voices[4];
-        // Use the SpeechSynthesis API to generate speech from the text
-        window.speechSynthesis.speak(utterance);
-      });
-    </script>
     <script src="JS/script.js"></script>
 </body>
 </html>
