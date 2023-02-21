@@ -14,20 +14,65 @@
     <div class="mainContainer">
         <div class="logo">myabdi4</div>
 
-        <div class="aboutme">
-            <p> I am a skilled front-end developer with experience in HTML, CSS, JavaScript and latest web development
-                trends. I aim to create visually appealing designs with optimal user experience across devices. </p>
-        </div>
-
-        <div class="twoDivs">
-            <div class="welcome">
-                <p><a href="texttospeech.html">Text to Speech</a></p>
+        <!-- Projects -->
+        <div class="myprojects">
+            <!-- projectOne -->
+            <div class="texttospeech">
+                <p><a href="#texttospeechsection">Text to Speech</a></p>
             </div>
+            <!-- projecttwo -->
+            <div class="projectTwo">
+                <p> Project Two</p>
+            </div>
+
+
+            <!-- flip effect - bio  -->
             <div class="description"></div>
         </div>
-        
-    </div>
-</body>
-<script type="text/javascript" src="js/script.js"></script>
 
+        <!-- Bio -->
+        <div class="aboutme">
+            <p> 
+                I am a skilled front-end developer with experience in HTML, CSS, JavaScript and latest web development
+                trends. I aim to create visually appealing designs with optimal user experience across devices. 
+            </p>
+        </div>
+    </div>
+
+
+
+    <!-- TTS PAGE -->
+    <div id="texttospeechsection">
+        <h1> FUN PROJECT- TEXT TO SPEECH (TTS) </h1>
+    
+        <button id="hello-button"> 
+            Artificial intelligence is a field of computer science, that 
+            focuses on creating machines, that can perform tasks that would normally require human intelligence, 
+            such as understanding natural language, recognizing images, and making decisions based on data. 
+        </button>
+        
+            <h3>click above text to read</h3>
+            
+            <a href="javascript:history.back()">
+                <img src="images/return.png" alt="return home">
+            </a>
+    </div>
+
+
+    <!-- Script for the TEXT TO SPEECH -->
+    <script>
+        // Add a click event listener to the button
+      const helloButton = document.getElementById('hello-button');
+      helloButton.addEventListener('click', () => {
+        // Create a new SpeechSynthesisUtterance object with the text of the button
+        const utterance = new SpeechSynthesisUtterance(helloButton.textContent);
+        const voices = speechSynthesis.getVoices();
+        // Set the voice of the utterance to the first available voice
+        utterance.voice = voices[4];
+        // Use the SpeechSynthesis API to generate speech from the text
+        window.speechSynthesis.speak(utterance);
+      });
+    </script>
+    <script src="JS/script.js"></script>
+</body>
 </html>
